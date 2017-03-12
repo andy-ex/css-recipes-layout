@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0 50px;
+}
+
+body > header {
+    background-color:  #212429;
+    height: 50px;
+    display: flex;
+
+    margin: 0 -50px;
+    padding: 0 50px;
+}
+
+header .header-item:first-child {
+    border-left: solid dimgrey 0.5px;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    border-right: solid dimgrey 0.5px;
+}
+
+.icon {
+    width: 50px;
+}
+
+.title {
+    flex: 1;
+    margin-left: 200px;
+}
+
+.banner-news {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: white;
+}
+
+.banner img {
+    position: relative;
+    width: 100%;
+}
+
+.banner nav {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    color: white;
+
+    transform: rotate(-90deg);
+}
+
+.nav-circles {
+    text-align: center;
+}
+
+.subscription-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.subscription-box * {
+    margin: 10px 20px;
+}
+
+.subscription-box input {
+    flex: 1;
+}
+
+.posts {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts section {
+    border: solid black 0.5px;
+    width: 270px;
+}
+
+.posts article  {
+    text-align: center;
+}
+
+.read-more {
+    content: "READ MORE";
+    padding: 5px;
+    width: 100px;
+    margin: 0 auto;
+    border-left: solid grey 0.5px;
+    border-right: solid grey 0.5px;
+}
