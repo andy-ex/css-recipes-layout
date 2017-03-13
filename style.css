@@ -1,19 +1,31 @@
 * {
     margin: 0;
     padding: 0;
+
+    font-family: 'Hind', sans-serif;
 }
 
 body {
-    padding: 0 50px;
+    background-color: #F9F9FB;
 }
 
-body > header {
+.background {
+    position: absolute;
+    width: 100%;
+    height: 345px;
+    background-color: #212429;
+    z-index: -100;
+}
+
+.page-content {
+    width:1530px;
+    margin: 0 auto;
+}
+
+body .page-content > header {
     background-color:  #212429;
     height: 50px;
     display: flex;
-
-    margin: 0 -50px;
-    padding: 0 50px;
 }
 
 header .header-item:first-child {
@@ -39,6 +51,11 @@ header .header-item:first-child {
     margin-left: 200px;
 }
 
+.banner {
+    position: relative;
+    height: 580px;
+}
+
 .banner-news {
     position: absolute;
     top: 200px;
@@ -48,7 +65,13 @@ header .header-item:first-child {
 
 .banner img {
     position: relative;
-    width: 100%;
+}
+
+.banner .news-content {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 5px;
 }
 
 .banner nav {
@@ -65,17 +88,41 @@ header .header-item:first-child {
 }
 
 .subscription-box {
+    background-color: #f7f7f7;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
+    padding: 15px 0;
 }
 
 .subscription-box * {
     margin: 10px 20px;
+
+}
+
+.subscription-box span {
+    font-family: 'Montserrat', sans-serif;
+    color: #212121;
+    font-size: 1.25em;
+    font-weight: 900;
+    line-height: 1.4; /* Approximation due to font substitution */
+    letter-spacing: 4px;
 }
 
 .subscription-box input {
     flex: 1;
+    height: 50px;
+}
+
+.subscription-box button {
+    height: 50px;
+    width: 280px;
+
+    background-color: #212121;
+
+    border: solid rgba(221, 221, 221, 15) 1px;
+
+    color: white;
 }
 
 .posts {
@@ -84,22 +131,102 @@ header .header-item:first-child {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    margin: 60px 0;
+
+
 }
 
 .posts section {
-    border: solid black 0.5px;
-    width: 270px;
+    width: 360px;
 }
 
-.posts article  {
+.posts article {
+    position: relative;
+}
+
+.posts .icon {
+    margin: 0 auto 20px auto;
+    position: relative;
+    top: -20px;
+
+    color: white;
+    background-color: #212121;
+    box-shadow: 0 1px 3px 0 rgba(213, 213, 213, 0.75);
+    width: 40px;
+    height: 35px;
+}
+
+.post-date, .post-group {
+    color: #999999;
+    font-size: 14px; /* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 24px; /* Approximation due to font substitution */
+}
+
+.posts article {
     text-align: center;
+    background-color: white;
+
+    color: #464646;
+    font-size: 0.938em;
+    font-weight: 300;
+    line-height: 1.867;
+
+    letter-spacing: 1px;
+
+    border: solid 1px rgba(221, 221, 221, 15);
+    box-shadow: 0 0 1px 0 rgba(232, 232, 232, 0.21)
+}
+
+
+.posts article main {
+    padding: 0 30px;
+    margin: 15px 0 50px 0;
 }
 
 .read-more {
-    content: "READ MORE";
-    padding: 5px;
-    width: 100px;
-    margin: 0 auto;
-    border-left: solid grey 0.5px;
-    border-right: solid grey 0.5px;
+    padding: 5px 10px;
+    width: 120px;
+    margin: 20px auto;
+    border-left: solid lightgrey 0.5px;
+    border-right: solid lightgrey 0.5px;
+
+    color: #212121;
+    font-size: 0.875em; /* Approximation due to font substitution */
+    font-weight: 700;
+    line-height: 1.714;
+    letter-spacing: 4px;
+}
+
+.post-title {
+    margin: 5px 0;
+
+    font-family: Montserrat, sans-serif;
+    color: #212121;
+    font-size: 1.25em; /* Approximation due to font substitution */
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: 2px;
+}
+
+.posts article footer {
+    height: 60px;
+    border-top: solid lightgrey 1px;
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts article footer .social * {
+    padding-left: 10px;
+}
+
+.posts article footer .comments span {
+    color: #999999;
+    font-size: 14px; /* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 24px; /* Approximation due to font substitution */
 }
