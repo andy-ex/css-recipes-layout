@@ -33,7 +33,7 @@ body {
     display: flex;
 }
 
-header .header-item:first-child {
+.header-item:first-child {
     border-left: solid dimgrey 1px;
 }
 
@@ -49,8 +49,33 @@ header .header-item:first-child {
     border-right: solid dimgrey 1px;
 }
 
+.header-item:not(.header-title):hover {
+    cursor: pointer;
+}
+
 .header-item .fa-twitter {
     color: grey;
+}
+
+.fa:hover {
+    cursor: pointer;
+    font-size: large;
+}
+
+.fa-twitter:hover {
+    color: deepskyblue;
+}
+
+.fa-facebook:hover {
+    color: #2f6fad;
+}
+
+.fa-tumblr:hover {
+    color: greenyellow;
+}
+
+.fa-rss:hover {
+    color: orange;
 }
 
 .header-title {
@@ -119,6 +144,10 @@ header .header-item:first-child {
     font-size: 20px;
 }
 
+.slider-arrow:hover {
+    cursor: pointer;
+}
+
 .subscription-box {
     background-color: #f7f7f7;
     display: flex;
@@ -144,6 +173,10 @@ header .header-item:first-child {
 .subscription-box input {
     flex: 1;
     height: 50px;
+}
+
+.subscription-box button:hover {
+    cursor: pointer;
 }
 
 .subscription-box input[placeholder] {
@@ -247,6 +280,10 @@ header .header-item:first-child {
     letter-spacing: 4px;
 }
 
+.read-more:hover {
+    cursor: pointer;
+}
+
 .post-title {
     margin: 5px 0;
 
@@ -317,17 +354,34 @@ article .image {
     flex-wrap: wrap;
 }
 
+.posts .gallery-post main {
+    padding-bottom: 0;
+}
+
 .gallery-preview a {
     width: 178px;
     height: 125px;
 }
 
-article + .gallery-post .read-more {
+.gallery-post .read-more {
     color: #999999;
     font-weight: 500;
 
     border-left: none;
     border-right: none;
+}
+
+.gallery-post .read-more:before, .gallery-post .read-more:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #dfdfdf;
+    margin: 5px auto;
+}
+
+.gallery-post .read-more:after {
+    margin-top: 3px;
 }
 
 .backgrounded-article {
@@ -340,7 +394,7 @@ article + .gallery-post .read-more {
     margin-top: -20px;
 }
 
-article + .video-post img {
+.video-post img {
     margin-top: -36px;
 }
 
