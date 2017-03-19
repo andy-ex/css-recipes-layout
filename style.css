@@ -10,27 +10,31 @@
 }
 
 body {
-    background-color: #F9F9FB;
     position: relative;
+
+    background-color: #F9F9FB;
 }
 
 .header-background {
     position: absolute;
+    z-index: -100;
+
     width: 100%;
     height: 345px;
+
     background-color: #212429;
-    z-index: -100;
 }
 
 .container {
-    width:1530px;
+    width: 1530px;
     margin: 0 auto;
 }
 
 .container > header {
-    background-color:  #212429;
     height: 55px;
     display: flex;
+
+    background-color: #212429;
 }
 
 .header-item:first-child {
@@ -38,15 +42,14 @@ body {
 }
 
 .header-item {
-    padding: 0 20px;
-
     display: flex;
     align-items: center;
     justify-content: center;
 
-    color: white;
-
+    padding: 0 20px;
     border-right: solid dimgrey 1px;
+
+    color: white;
 }
 
 .header-item:not(.header-title):hover {
@@ -78,6 +81,7 @@ body {
     margin-left: 255px;
 
     color: #fefefe;
+
     font-size: 22px;
     font-weight: 600;
     line-height: 24px;
@@ -85,14 +89,16 @@ body {
 }
 
 .banner {
-    height: 580px;
     position: relative;
+
+    height: 580px;
 }
 
 .banner-news {
     position: absolute;
     top: 220px;
     left: 100px;
+
     color: white;
 }
 
@@ -106,6 +112,7 @@ body {
 .banner .news-content {
     width: 470px;
     margin-top: 20px;
+
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
@@ -117,21 +124,25 @@ body {
     position: absolute;
     top: 270px;
     right: -60px;
+
+    transform: rotate(-90deg);
+
     color: white;
+
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
-
-    transform: rotate(-90deg);
 }
 
 .nav-squares {
     text-align: center;
+
     font-size: 20px;
 }
 
 .slider-text {
     margin: 0 10px;
+
     letter-spacing: 3px;
 }
 
@@ -144,11 +155,12 @@ body {
 }
 
 .subscription-box {
-    background-color: #f7f7f7;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 7px;
+
+    background-color: #f7f7f7;
 }
 
 .subscription-box * {
@@ -157,11 +169,13 @@ body {
 
 .subscription-box-heading {
     width: 180px;
-    font-family: 'Montserrat', sans-serif;
+
     color: #212121;
+
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.25em;
     font-weight: 900;
-    line-height: 1.4; 
+    line-height: 1.4;
     letter-spacing: 4px;
 }
 
@@ -175,23 +189,23 @@ body {
 }
 
 .subscription-box input[placeholder] {
-    color:  #999999;
+    padding-left: 40px;
+
+    color: #999999;
+
     font-size: 15px;
     font-weight: 300;
     line-height: 28px;
     letter-spacing: 3px;
-    padding-left: 40px;
 }
 
 .subscription-box button {
     height: 50px;
     width: 280px;
-
-    background-color: #212121;
-
     border: solid rgba(221, 221, 221, 15) 1px;
 
     color: white;
+    background-color: #212121;
 
     font-size: 14px;
     font-weight: 500;
@@ -214,40 +228,40 @@ body {
 }
 
 .post-icon {
-    width: 40px;
-    height: 35px;
-
-    margin: 0 auto;
-
     position: relative;
     top: -20px;
-
-    color: white;
-    background-color: #212121;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 40px;
+    height: 35px;
+    margin: 0 auto;
+
+    color: white;
+    background-color: #212121;
 }
 
 .post-date, .post-tag {
     color: #999999;
-    font-size: 14px; 
+
+    font-size: 14px;
     font-weight: 400;
-    line-height: 24px; 
+    line-height: 24px;
 }
 
 .posts article {
-    text-align: center;
-    background-color: white;
-
     margin-bottom: 50px;
 
     color: #464646;
+    background-color: white;
+
+    text-align: center;
+
     font-size: 0.938em;
     font-weight: 300;
     line-height: 1.867;
-
     letter-spacing: 1px;
 }
 
@@ -255,21 +269,22 @@ body {
     box-shadow: 0 3px 25px 3px rgba(112, 112, 112, 0.49);
 }
 
-
 .posts article main {
-    padding: 0 30px 20px 30px;
     margin: 15px 0 0 0;
+    padding: 0 30px 20px 30px;
 }
 
 .read-more {
-    padding: 5px 10px;
     width: 120px;
     margin: 25px auto;
+    padding: 5px 10px;
+
     border-left: solid lightgrey 1px;
     border-right: solid lightgrey 1px;
 
     color: #212121;
-    font-size: 0.875em; 
+
+    font-size: 0.875em;
     font-weight: 700;
     line-height: 1.714;
     letter-spacing: 4px;
@@ -281,10 +296,10 @@ body {
 
 .post-title {
     margin: 5px 0;
+    color: #212121;
 
     font-family: Montserrat, sans-serif;
-    color: #212121;
-    font-size: 1.25em; 
+    font-size: 1.25em;
     font-weight: 900;
     line-height: 1.4;
     letter-spacing: 2px;
@@ -295,13 +310,14 @@ body {
 }
 
 .posts article footer {
-    height: 60px;
-    border-top: solid lightgrey 1px;
-    padding: 0 30px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    height: 60px;
+    padding: 0 30px;
+
+    border-top: solid lightgrey 1px;
 }
 
 .posts article footer .social * {
@@ -309,20 +325,21 @@ body {
 }
 
 .posts .social .fa:hover {
-    cursor: pointer;
     font-size: large;
-}
 
+    cursor: pointer;
+}
 
 .posts article footer .comments span {
     color: #999999;
-    font-size: 14px; 
+    font-size: 14px;
     font-weight: 400;
-    line-height: 24px; 
+    line-height: 24px;
 }
 
 article .image {
     height: 256px;
+
     background-color: #f4f4f4;
 }
 
@@ -335,24 +352,27 @@ article .image {
 }
 
 .quote-article-author {
-    color: #999999;
-    font-size: 14px; 
-    font-weight: 400;
-
     margin-top: 20px;
+
+    color: #999999;
+
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .quote-article main {
     margin-bottom: 0;
+
     font-size: 17px;
     font-weight: 300;
-    line-height: 28px; 
+    line-height: 28px;
 }
 
 .gallery-preview {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
+
+    width: 100%;
 }
 
 .posts .gallery-post main {
@@ -366,10 +386,11 @@ article .image {
 
 .gallery-post .read-more {
     color: #999999;
-    font-weight: 500;
 
     border-left: none;
     border-right: none;
+
+    font-weight: 500;
 }
 
 .gallery-post .read-more:before, .gallery-post .read-more:after {
@@ -377,8 +398,9 @@ article .image {
     display: block;
     width: 30px;
     height: 1px;
-    background-color: #dfdfdf;
     margin: 5px auto;
+
+    background-color: #dfdfdf;
 }
 
 .gallery-post .read-more:after {
@@ -387,9 +409,9 @@ article .image {
 
 .backgrounded-article {
     padding-top: 20px;
+
     background-image: url(img/post-background.png);
 }
-
 
 .posts .no-top-icon {
     margin-top: -20px;
@@ -405,6 +427,7 @@ article .image {
 
 .link-post main a {
     color: #ffffff;
+
     font-size: 17px;
     font-weight: 300;
     line-height: 28px;
@@ -426,10 +449,10 @@ article .image {
 }
 
 .circle {
-    margin: 0 auto 140px auto;
-
     height: 135px;
     width: 135px;
+
+    margin: 0 auto 140px auto;
     border-radius: 50%;
 
     background-color: #999999;
@@ -437,22 +460,22 @@ article .image {
 
 .footer-content {
     height: 370px;
-    color: #f7f7f7;
 
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    color: #f7f7f7;
 }
 
 .footer-content > section > header {
-    font-family: 'Montserrat', sans-serif;
+    margin: 40px 0 30px 0;
 
-    font-size: 16px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 2px;
-
-    margin: 40px 0 30px 0;
 }
 
 .footer-content > section {
@@ -460,21 +483,19 @@ article .image {
 }
 
 .about-signature-container {
+    position: relative;
     width: 100%;
     height: 150px;
 
-    background-color:  #3a3c49;
-
     color: white;
-
-    position: relative;
+    background-color: #3a3c49;
 }
 
 .about-signature {
     position: absolute;
-
     right: 0;
     bottom: 0;
+    transform: rotate(-8.785deg);
 
     margin: 30px 15px;
 
@@ -482,7 +503,6 @@ article .image {
     font-size: 36px;
     font-weight: 400;
     line-height: 24px;
-    transform: rotate(-8.785deg);
 }
 
 .tweet {
@@ -499,10 +519,11 @@ article .image {
 }
 
 .instagram-pics {
-    height: 200px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+
+    height: 200px;
 
 }
 
@@ -510,6 +531,7 @@ article .image {
     height: 100px;
     width: 118px;
     margin: 1px;
+
     background-color: white;
 }
 
@@ -518,8 +540,8 @@ article .image {
 }
 
 .footer-comment:not(:first-child) {
-    border-top: solid 1px grey;
     padding-top: 20px;
+    border-top: solid 1px grey;
 }
 
 .separator {
@@ -527,29 +549,34 @@ article .image {
 }
 
 .copyright {
+    height: 30px;
+
+    color: grey;
+
     text-align: center;
-    color:  grey;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 1px;
-    height: 30px;
 }
 
 .copyright a {
     color: grey;
+
     text-decoration: none;
 }
 
 .footer-background {
-    width: 100%;
-    height: 410px;
-    background-color:  #212429;
     position: absolute;
     z-index: -100;
     bottom: 0;
 
+    width: 100%;
+    height: 410px;
+
     box-sizing: border-box;
     border-bottom: solid 40px #17191c;
+
+    background-color: #212429;
 }
 
 
