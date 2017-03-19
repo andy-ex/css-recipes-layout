@@ -57,11 +57,6 @@ body {
     color: grey;
 }
 
-.fa:hover {
-    cursor: pointer;
-    font-size: large;
-}
-
 .fa-twitter:hover {
     color: deepskyblue;
 }
@@ -312,6 +307,12 @@ body {
 .posts article footer .social * {
     padding-left: 15px;
 }
+
+.posts .social .fa:hover {
+    cursor: pointer;
+    font-size: large;
+}
+
 
 .posts article footer .comments span {
     color: #999999;
