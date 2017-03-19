@@ -6,58 +6,68 @@
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 
-<div class="background"></div>
+<div class="header-background"></div>
 
-<div class="page-content">
+<div class="container">
     <header>
-        <div class="header-item icon">
+        <div class="header-item">
             <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
         </div>
 
-        <div class="header-item title">
-            DECO BLOG
+        <div class="header-item header-title">
+            <span>
+                <img src="img/deco.png">  BLOG
+            </span>
         </div>
-
-        <div class="header-item icon">
-
+        <div class="header-item">
+            <i class="fa fa-rss" aria-hidden="true"></i>
         </div>
-        <div class="header-item icon"></div>
-        <div class="header-item icon"></div>
-        <div class="header-item icon"></div>
-        <div class="header-item icon"></div>
+        <div class="header-item">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+        <div class="header-item">
+            <i class="fa fa-tumblr" aria-hidden="true"></i>
+        </div>
+        <div class="header-item">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+        <div class="header-item">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
     </header>
 
     <main>
         <div class="banner">
             <img src="img/banner.png">
             <div class="banner-news">
-                Latest News
-                <p class="news-content">
+                <span class="banner-news-heading">Latest News</span>
+                <div class="news-content">
                     BODYBUILDING BEST<br>
                     FOR YOUR HEALTH
-                </p>
+                </div>
             </div>
 
             <nav>
-                <div class="nav-circles">
+                <div class="nav-squares">
                     &#9633;
                     &#9632;
                     &#9633;
                 </div>
                 <div class="slider-arrows">
-                    &#x27f5;
-                    FEATURED ARTICLE
-                    &#x27f6;
+                    <span class="slider-arrow">&#x27f5;</span>
+                    <span class="slider-text">FEATURED ARTICLE</span>
+                    <span class="slider-arrow">&#x27f6;</span>
                 </div>
             </nav>
         </div>
         <div class="subscription-box">
-                <span>SIGNUP TO <br>
-                    NEWSLETTER
+                <span class="subscription-box-heading">
+                    SIGNUP TO NEWSLETTER
                 </span>
 
             <input placeholder="YOUR NAME"/>
@@ -67,11 +77,11 @@
         <div class="posts">
             <section>
                 <article>
-                    <header class="standard">
-                        <div class="icon">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                        </div>
-                        <div class="post-group">
+                    <div class="post-icon">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                    <header>
+                        <div class="post-tag">
                             TRAVELLING
                         </div>
                         <div class="post-title">
@@ -98,15 +108,34 @@
                         </div>
                     </footer>
                 </article>
+                <article class="blank-post no-top-icon">
+                </article>
+                <article class="backgrounded-article no-top-icon">
+                    <header>
+                        <div class="post-tag">
+                            TRAVELLING
+                        </div>
+                        <div class="post-title">
+                            TRAVEL BEST ADVENTURE
+                        </div>
+                        <div class="post-date">
+                            JANUARY 25, 2016
+                        </div>
+                    </header>
+                    <main>
+                        Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo tehampor incididunt uts laboasre etsa iusmod tehampor incididunt uts havlaboasre et dolhvaliqua. Ut enim  vem, choice is the have great work.
+                        <div class="read-more">READ MORE</div>
+                    </main>
+                </article>
             </section>
             <section>
                 <article>
                     <div class="image"></div>
-                    <header>                        
-                        <div class="icon">
-                            <i class="fa fa-picture-o fa-lg" aria-hidden="true"></i>
-                        </div>
-                        <div class="post-group">
+                    <div class="post-icon">
+                        <i class="fa fa-picture-o fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <header>
+                        <div class="post-tag">
                             TRAVELLING
                         </div>
                         <div class="post-title">
@@ -132,14 +161,55 @@
                         </div>
                     </footer>
                 </article>
+                <article class="quote-article dark-article">
+                    <div class="post-icon">
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                    <main>
+                        As per Lorm ipsum dolor sitamet, consectetur adipisicing elits, sed do Now eiusmod tempor havei ut labores et dolore magna aliqusa. Ut wenim ad minim veniam, quis its a snostrud now is the ullamco aliquip ex ea commodo .
+                        <p class="quote-article-author">NATHALIA ALEXY</p>
+                    </main>
+                </article>
+                <article class="video-post">
+                    <div class="post-icon">
+                        <i class="fa fa-film" aria-hidden="true"></i>
+                    </div>
+                    <img src="img/video.png"/>
+                    <header>
+                        <div class="post-tag">
+                            DESIGNER
+                        </div>
+                        <div class="post-title">
+                            VIDEO IMAGE POST STYLE
+                        </div>
+                        <div class="post-date">
+                            JANUARY 25, 2016
+                        </div>
+                    </header>
+                    <main>
+                        A CONAN staffer is learning the rules of the in  road, with a little help from Look out, fellow drivers!
+                    </main>
+                    <footer>
+                        <div class="comments">
+                            <i class="fa fa-comments-o" aria-hidden="true"></i>
+                            <span>NO COMMENT</span>
+                        </div>
+                        <div class="social">
+                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        </div>
+                    </footer>
+                </article>
             </section>
             <section>
                 <article>
-                    <header class="standard">
-                        <div class="icon">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                        </div>
-                        <div class="post-group">
+                    <div class="post-icon">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                    <header>
+                        <div class="post-tag">
                             FASHION
                         </div>
                         <div class="post-title">
@@ -166,18 +236,208 @@
                         </div>
                     </footer>
                 </article>
+                <article class="gallery-post no-top-icon">
+                    <div class="gallery-preview">
+                        <a href="img/gallery.png"><img src="img/gallery.png"></a>
+                        <a href="img/gallery.png"><img src="img/gallery.png"></a>
+                        <a href="img/gallery.png"><img src="img/gallery.png"></a>
+                        <a href="img/gallery.png"><img src="img/gallery.png"></a>
+                    </div>
+                    <div class="post-icon">
+                        <i class="fa fa-picture-o fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <header>
+                        <div class="post-tag">
+                            ADVENTURES
+                        </div>
+                        <div class="post-title">
+                            AWESOME GALLERY POST
+                        </div>
+                        <div class="post-date">
+                            JANUARY 19, 2016
+                        </div>
+                    </header>
+                    <main>
+                        <div class="read-more">
+                            <span class="overflow-center">READ MORE</span>
+                        </div>
+                    </main>
+                    <footer>
+                        <div class="comments">
+                            <i class="fa fa-comments-o" aria-hidden="true"></i>
+                            <span>NO COMMENT</span>
+                        </div>
+                        <div class="social">
+                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        </div>
+                    </footer>
+                </article>
+                <article class="link-post dark-article">
+                    <div class="post-icon ">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
+                    <main>
+                        <a href="">http://www.abcdomainname.com/ screen/discovery</a>
+                    </main>
+                </article>
+                <article class="squares-article dark-article">
+                    <div class="post-icon">
+                        <i class="fa fa-th-large fa-lg" aria-hidden="true"></i>
+                    </div>
+                </article>
             </section>
             <section>
+                <article class="blank-post">
+                </article>
                 <article>
-                    <div class="blank"></div>
+                    <div class="post-icon">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                    <header>
+                        <div class="post-tag">
+                            LIFESTYLE
+                        </div>
+                        <div class="post-title">
+                            WITHOUT IMAGE POST
+                        </div>
+                        <div class="post-date">
+                            JANUARY 07, 2016
+                        </div>
+                    </header>
+                    <main>
+                        Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.
+                        <div class="read-more">READ MORE</div>
+                    </main>
+                    <footer>
+                        <div class="comments">
+                            <i class="fa fa-comments-o" aria-hidden="true"></i>
+                            <span>NO COMMENT</span>
+                        </div>
+                        <div class="social">
+                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        </div>
+                    </footer>
+                </article>
+                <article class="audio-post">
+                    <div class="post-icon">
+                        <i class="fa fa-music" aria-hidden="true"></i>
+                    </div>
+                    <header>
+                        <div class="post-tag">
+                            AUDIO MUSIC
+                        </div>
+                        <div class="post-title">
+                            BEST AUDIO PLAYER POST
+                        </div>
+                        <div class="post-date">
+                            DECEMBER 25, 2015
+                        </div>
+                    </header>
+                    <main>
+                        <div class="circle"></div>
+                    </main>
                 </article>
             </section>
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer-content">
+            <section>
+                <header>ABOUT BLOG</header>
+                <main>
+                    Lorem ipsum dolor sit amet, conser adipisicing  esse cillum dolore nulla pariatur.
+                    <div class="about-signature-container">
+                        <span class="about-signature">Nathaliya Jhone</span>
+                    </div>
+                </main>
+            </section>
+            <section>
+                <header>LATEST TWEETS</header>
+                <main>
+                    <div class="tweet">
+                        <div class="tweet-icon">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </div>
+                        <div class="tweet-content">
+                            <div class="tweet-author">
+                                @Twitter@magicalrebekah
+                            </div>
+                            <div class="tweet-text">
+                                Developer Advocate @heyval isaiyou knows the very well is about things .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweet">
+                        <div class="tweet-icon">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </div>
+                        <div class="tweet-content">
+                            <div class="tweet-author">
+                                @Twitter@magicalrebekah
+                            </div>
+                            <div class="tweet-text">
+                                Developer Advocate hav a great work this knows the very well is about things .
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </section>
+            <section>
+                <header>
+                    FOLLOW ME INSTAGRAM
+                </header>
+                <main class="instagram-pics">
+                    <div class="instagram-pic"></div>
+                    <div class="instagram-pic"></div>
+                    <div class="instagram-pic"></div>
+                    <div class="instagram-pic"></div>
+                    <div class="instagram-pic"></div>
+                    <div class="instagram-pic"></div>
+                </main>
+            </section>
+            <section>
+                <header>
+                    LATEST COMMENT
+                </header>
+                <main>
+                    <div class="footer-comment">
+                        <div class="footer-comment-author">
+                            From Alex :
+                        </div>
+                        <div class="footer-comment-content">
+                            Developer Advocate @heyval isaiyou know the very well is talking about things .
+                        </div>
+                    </div>
+                    <div class="footer-comment">
+                        <div class="footer-comment-author">
+                            From Jhon Doe :
+                        </div>
+                        <div class="footer-comment-content">
+                            Developer Advocate @heyval isaiyou know the very well is talking about things .
+                        </div>
+                    </div>
+                </main>
+            </section>
+        </div>
+        <div class="copyright">
+            @2015 COPYRIGHT .ALL RIGHTS RESERVED BY AWESOME THEME
+            <span class="separator">|</span>
+            <a href="/terms">TERMS POLICY</a>
+            <span class="separator">|</span>
+            <a href="/disclaimer">DISCLAIMER</a>
+        </div>
+    </footer>
 
 </div>
+
+<div class="footer-background"></div>
 
 </body>
 </html>

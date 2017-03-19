@@ -5,11 +5,16 @@
     font-family: 'Hind', sans-serif;
 }
 
-body {
-    background-color: #F9F9FB;
+.html {
+    height: 100%;
 }
 
-.background {
+body {
+    background-color: #F9F9FB;
+    position: relative;
+}
+
+.header-background {
     position: absolute;
     width: 100%;
     height: 345px;
@@ -17,74 +22,101 @@ body {
     z-index: -100;
 }
 
-.page-content {
+.container {
     width:1530px;
     margin: 0 auto;
 }
 
-body .page-content > header {
+.container > header {
     background-color:  #212429;
-    height: 50px;
+    height: 55px;
     display: flex;
 }
 
 header .header-item:first-child {
-    border-left: solid dimgrey 0.5px;
+    border-left: solid dimgrey 1px;
 }
 
 .header-item {
+    padding: 0 20px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     color: white;
 
-    border-right: solid dimgrey 0.5px;
+    border-right: solid dimgrey 1px;
 }
 
-.header-item, .icon {
-    width: 50px;
+.header-item .fa-twitter {
+    color: grey;
 }
 
-.title {
+.header-title {
     flex: 1;
-    margin-left: 200px;
+    margin-left: 255px;
+
+    color: #fefefe;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 5px;
 }
 
 .banner {
-    position: relative;
     height: 580px;
+    position: relative;
 }
 
 .banner-news {
     position: absolute;
-    top: 200px;
+    top: 220px;
     left: 100px;
     color: white;
 }
 
-.banner img {
-    position: relative;
+.banner-news-heading {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 4px;
 }
 
 .banner .news-content {
+    width: 470px;
+    margin-top: 20px;
     font-size: 40px;
-    font-style: normal;
-    font-weight: 900;
-    letter-spacing: 5px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 6px;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.44);
 }
 
 .banner nav {
     position: absolute;
-    top: 200px;
-    right: 0;
+    top: 270px;
+    right: -60px;
     color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
 
     transform: rotate(-90deg);
 }
 
-.nav-circles {
+.nav-squares {
     text-align: center;
+    font-size: 20px;
+}
+
+.slider-text {
+    margin: 0 10px;
+    letter-spacing: 3px;
+}
+
+.slider-arrow {
+    font-size: 20px;
 }
 
 .subscription-box {
@@ -92,26 +124,35 @@ header .header-item:first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 15px 7px;
 }
 
 .subscription-box * {
     margin: 10px 20px;
-
 }
 
-.subscription-box span {
+.subscription-box-heading {
+    width: 180px;
     font-family: 'Montserrat', sans-serif;
     color: #212121;
     font-size: 1.25em;
     font-weight: 900;
-    line-height: 1.4; /* Approximation due to font substitution */
+    line-height: 1.4; 
     letter-spacing: 4px;
 }
 
 .subscription-box input {
     flex: 1;
     height: 50px;
+}
+
+.subscription-box input[placeholder] {
+    color:  #999999;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 3px;
+    padding-left: 40px;
 }
 
 .subscription-box button {
@@ -123,6 +164,11 @@ header .header-item:first-child {
     border: solid rgba(221, 221, 221, 15) 1px;
 
     color: white;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3px;
 }
 
 .posts {
@@ -132,43 +178,42 @@ header .header-item:first-child {
     justify-content: space-between;
     align-items: flex-start;
 
-    margin: 60px 0;
+    margin: 72px 0 25px 0;
 }
 
 .posts section {
     width: 360px;
 }
 
-.posts article {
-    position: relative;
-}
+.post-icon {
+    width: 40px;
+    height: 35px;
 
-.posts .icon {
-    margin: 0 auto 15px auto;
+    margin: 0 auto;
+
     position: relative;
     top: -20px;
 
     color: white;
     background-color: #212121;
-    box-shadow: 0 1px 3px 0 rgba(213, 213, 213, 0.75);
-    width: 40px;
-    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.posts .icon > i {
-    text-align: center;
-}
-
-.post-date, .post-group {
+.post-date, .post-tag {
     color: #999999;
-    font-size: 14px; /* Approximation due to font substitution */
+    font-size: 14px; 
     font-weight: 400;
-    line-height: 24px; /* Approximation due to font substitution */
+    line-height: 24px; 
 }
 
 .posts article {
     text-align: center;
     background-color: white;
+
+    margin-bottom: 50px;
 
     color: #464646;
     font-size: 0.938em;
@@ -176,26 +221,27 @@ header .header-item:first-child {
     line-height: 1.867;
 
     letter-spacing: 1px;
+}
 
-    /*border: solid 1px rgba(221, 221, 221, 15);*/
-    box-shadow: 0 0 1px 0 rgba(232, 232, 232, 0.21)
+.posts article:hover {
+    box-shadow: 0 3px 25px 3px rgba(112, 112, 112, 0.49);
 }
 
 
 .posts article main {
-    padding: 0 30px;
-    margin: 15px 0 50px 0;
+    padding: 0 30px 20px 30px;
+    margin: 15px 0 0 0;
 }
 
 .read-more {
     padding: 5px 10px;
     width: 120px;
-    margin: 20px auto;
-    border-left: solid lightgrey 0.5px;
-    border-right: solid lightgrey 0.5px;
+    margin: 25px auto;
+    border-left: solid lightgrey 1px;
+    border-right: solid lightgrey 1px;
 
     color: #212121;
-    font-size: 0.875em; /* Approximation due to font substitution */
+    font-size: 0.875em; 
     font-weight: 700;
     line-height: 1.714;
     letter-spacing: 4px;
@@ -206,10 +252,14 @@ header .header-item:first-child {
 
     font-family: Montserrat, sans-serif;
     color: #212121;
-    font-size: 1.25em; /* Approximation due to font substitution */
+    font-size: 1.25em; 
     font-weight: 900;
     line-height: 1.4;
     letter-spacing: 2px;
+}
+
+.posts article header {
+    padding-top: 20px;
 }
 
 .posts article footer {
@@ -223,14 +273,14 @@ header .header-item:first-child {
 }
 
 .posts article footer .social * {
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .posts article footer .comments span {
     color: #999999;
-    font-size: 14px; /* Approximation due to font substitution */
+    font-size: 14px; 
     font-weight: 400;
-    line-height: 24px; /* Approximation due to font substitution */
+    line-height: 24px; 
 }
 
 article .image {
@@ -238,7 +288,213 @@ article .image {
     background-color: #f4f4f4;
 }
 
-article .blank {
+.blank-post {
     height: 510px;
 }
+
+.posts .quote-article {
+    padding-bottom: 20px;
+}
+
+.quote-article-author {
+    color: #999999;
+    font-size: 14px; 
+    font-weight: 400;
+
+    margin-top: 20px;
+}
+
+.quote-article main {
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28px; 
+}
+
+.gallery-preview {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-preview a {
+    width: 178px;
+    height: 125px;
+}
+
+article + .gallery-post .read-more {
+    color: #999999;
+    font-weight: 500;
+
+    border-left: none;
+    border-right: none;
+}
+
+.backgrounded-article {
+    padding-top: 20px;
+    background-image: url(img/post-background.png);
+}
+
+
+.posts .no-top-icon {
+    margin-top: -20px;
+}
+
+article + .video-post img {
+    margin-top: -36px;
+}
+
+.link-post {
+    padding-bottom: 40px;
+}
+
+.link-post main a {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28px;
+    text-decoration: underline;
+}
+
+.posts .dark-article {
+    color: white;
+    background-color: #212429;
+}
+
+.dark-article .post-icon {
+    color: #212429;
+    background-color: white;
+}
+
+.squares-article {
+    height: 290px;
+}
+
+.circle {
+    margin: 0 auto 140px auto;
+
+    height: 135px;
+    width: 135px;
+    border-radius: 50%;
+
+    background-color: #999999;
+}
+
+.footer-content {
+    height: 370px;
+    color: #f7f7f7;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-content > section > header {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 16px; 
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 2px;
+
+    margin: 40px 0 30px 0;
+}
+
+.footer-content > section {
+    width: 360px;
+}
+
+.about-signature-container {
+    width: 100%;
+    height: 150px;
+
+    background-color:  #3a3c49;
+
+    color: white;
+
+    position: relative;
+}
+
+.about-signature {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    margin: 30px 15px;
+
+    font-family: 'Mrs Saint Delafield', cursive;;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 24px;
+    transform: rotate(-8.785deg);
+}
+
+.tweet {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tweet-icon {
+    width: 40px;
+}
+
+.tweet-author {
+    margin-bottom: 10px;
+}
+
+.instagram-pics {
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.instagram-pic {
+    height: 100px;
+    width: 118px;
+    margin: 1px;
+    background-color: white;
+}
+
+.footer-comment {
+    padding-bottom: 20px;
+}
+
+.footer-comment:not(:first-child) {
+    border-top: solid 1px grey;
+    padding-top: 20px;
+}
+
+.separator {
+    margin: 0 20px;
+}
+
+.copyright {
+    text-align: center;
+    color:  grey;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    height: 30px;
+}
+
+.copyright a {
+    color: grey;
+    text-decoration: none;
+}
+
+.footer-background {
+    width: 100%;
+    height: 410px;
+    background-color:  #212429;
+    position: absolute;
+    z-index: -100;
+    bottom: 0;
+
+    box-sizing: border-box;
+    border-bottom: solid 40px #17191c;
+}
+
 
